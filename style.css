@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head {
+    width: 150px;
+    height: 150px;
+    background: #a4d9eb;
+    border: 5px solid #9bbcc2;
+    border-radius: 20px;
+    position: relative;
+    margin: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.stick {
+    width: 10px;
+    height: 15px;
+    background: #808080;
+    position: absolute;
+    top: -20px;
+    left: 70px;
+}
+
+.bulb {
+    width: 30px;
+    height: 30px;
+    background: #ffa500;
+    border-radius: 50%;
+    left: 60px;
+    position: absolute;
+    top: -48px;
+    z-index: 9;
+}
+
+
+.ears {
+    position: absolute;
+    display: flex;
+    gap: 160px;
+}
+
+.ear {
+    width: 10px;
+    height: 50px;
+    background: #c90a0a;
+    border-radius: 0 5px 5px 0;
+}
+
+.ear:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.eyes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 25px;
+}
+
+.eye {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 5px solid #00b3ff;
+}
+
+.nose {
+    position: relative;
+    background-color: #c90a0a;
+}
+
+.nose:before,
+.nose:after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+}
+
+.nose,
+.nose:before,
+.nose:after {
+    width: 20px;
+    height: 20px;
+}
+
+.nose {
+    transform: rotate(-60deg) skewX(-30deg) scale(1, .866);
+}
+
+.nose:before {
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+}
+
+.nose:after {
+    transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+}
+
+.mouth {
+    width: 100px;
+    height: 25px;
+    background-color: #dedede;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tooth {
+    width: 5px;
+    background-color: black;
+    height: 100%;
+}
